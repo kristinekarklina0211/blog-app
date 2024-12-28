@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Blog App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Блог</h1>
+
+      <div class="row">
+        <div class="col">
+          <h2>Новый пост</h2>
+
+          <input
+            class="js-post-title-input post-title-input"
+            type="text"
+            placeholder="Заголовок"
+          />
+
+          <p class="js-title-counter counter">100/100</p>
+
+          <textarea
+            class="js-post-text-input post-text-input"
+            placeholder="Напиши пост"
+          ></textarea>
+
+          <p class="js-text-counter counter">200/200</p>
+
+          <button disabled class="js-publish-btn publish-btn">Опубликовать</button>
+
+          <div class="js-error-message error-message error-message_hidden">
+          </div>
+        </div>
+
+        <div class="col">
+          <h2 class="posts__title">Лента</h2>
+
+          <div class="js-posts posts">
+            <p>Тут пока пусто...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
