@@ -76,7 +76,6 @@ h2 {
   margin-bottom: 30px;
 
   font-size: 20px;
-
   text-align: end;
 }
 
@@ -216,11 +215,12 @@ h2 {
 
 @media (max-width: 767px) {
   .container {
-    padding: 50px 30px;
+    padding: 40px 30px;
   }
 
   .row {
     flex-direction: column;
+    gap: 60px;
   }
 
   .col {
@@ -228,20 +228,20 @@ h2 {
   }
 
   h1 {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
     font-size: 36px;
     font-weight: 700;
   }
 
   h2 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
     font-size: 28px;
   }
 
   .posts__title {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .post-title-input,
@@ -256,13 +256,18 @@ h2 {
   }
 
   .post-title-input {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     height: 60px;
   }
 
   .post-text-input {
+    margin-bottom: 15px;
     padding-top: 11px;
     height: 150px;
+  }
+
+  .counter {
+    font-size: 15px;
   }
 
   .publish-btn {
