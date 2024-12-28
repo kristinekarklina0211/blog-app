@@ -220,7 +220,7 @@ h2 {
 
   .row {
     flex-direction: column;
-    gap: 60px;
+    gap: 35px;
   }
 
   .col {
@@ -228,7 +228,7 @@ h2 {
   }
 
   h1 {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 
     font-size: 36px;
     font-weight: 700;
@@ -267,7 +267,7 @@ h2 {
   }
 
   .counter {
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .publish-btn {

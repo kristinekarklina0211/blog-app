@@ -33,6 +33,14 @@ publishBtnNode.addEventListener("click", function() {
 
     // Отображение опубликованных постов в ленте в виде списка
     renderPosts();
+
+    // Проверяем ширину экрана, чтобы работать только в мобильной версии
+    if (window.innerWidth <= 767) {
+        document.querySelector("#posts").scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+    }
 });
 
 
@@ -168,6 +176,7 @@ function resetCounters() {
 
     titleCounterNode.style.color = "black";
     textCounterNode.style.color = "black";
+    publishBtnNode.disabled = true;
 }
 
 // Формирование даты публикации
